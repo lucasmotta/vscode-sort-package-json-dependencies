@@ -14,8 +14,6 @@ const sortPackageJson = async (doc: vscode.TextDocument) => {
 };
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log('Congratulations, your extension "sort-package" is now active!');
-
   context.subscriptions.push(
     vscode.commands.registerCommand('sort-package.sortPackage', async () => {
       const editor = vscode.window.activeTextEditor;
