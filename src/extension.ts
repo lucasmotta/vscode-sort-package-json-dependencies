@@ -6,9 +6,7 @@ const sortPackageJson = async (doc: vscode.TextDocument) => {
     return;
   }
 
-  const text = doc.getText();
-
-  const sorted = sort(text);
+  const sorted = sort(doc.getText());
 
   await vscode.workspace.fs.writeFile(doc.uri, Buffer.from(sorted, 'utf8'));
 };
