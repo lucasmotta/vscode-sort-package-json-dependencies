@@ -1,19 +1,19 @@
 {
   "name": "sort-package",
   "displayName": "Sort Package",
-  "license": "MIT",
-  "author": {
-    "name": "jamesinaxx"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jamesinaxx/vscode-sort-package"
-  },
   "version": "0.0.1",
   "description": "Sort package.json on save or by command",
   "categories": [
     "Formatters"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesinaxx/vscode-sort-package"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "jamesinaxx"
+  },
   "main": "./dist/extension.js",
   "scripts": {
     "compile": "webpack",
@@ -23,6 +23,16 @@
     "watch": "webpack --watch"
   },
   "contributes": {
+    "activationEvents": [
+      "onLanguage:json",
+      "onCommand:sort-package.sortPackage"
+    ],
+    "commands": [
+      {
+        "command": "sort-package.sortPackage",
+        "title": "Sort Package"
+      }
+    ],
     "configuration": {
       "title": "Sort Package",
       "properties": {
@@ -32,18 +42,8 @@
           "default": true
         }
       }
-    },
-    "commands": [
-      {
-        "command": "sort-package.sortPackage",
-        "title": "Sort Package"
-      }
-    ]
+    }
   },
-  "activationEvents": [
-    "onCommand:sort-package.sortPackage",
-    "onLanguage:json"
-  ],
   "dependencies": {
     "sort-package-json": "1.53.1"
   },
