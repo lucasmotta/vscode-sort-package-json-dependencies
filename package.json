@@ -1,7 +1,7 @@
 {
   "name": "sort-package",
   "displayName": "Sort Package",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Sort package.json on save or by command",
   "categories": [
     "Formatters"
