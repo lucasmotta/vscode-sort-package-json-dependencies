@@ -22,11 +22,11 @@
     "vscode:prepublish": "yarn run package",
     "watch": "webpack --watch"
   },
+  "activationEvents": [
+    "onLanguage:json",
+    "onCommand:sort-package.sortPackage"
+  ],
   "contributes": {
-    "activationEvents": [
-      "onLanguage:json",
-      "onCommand:sort-package.sortPackage"
-    ],
     "commands": [
       {
         "command": "sort-package.sortPackage",
