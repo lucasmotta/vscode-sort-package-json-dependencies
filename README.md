@@ -1,25 +1,19 @@
-# Sort Package README
+# vscode-sort-package-json-dependencies
 
-## Features
+Sorts your package.json dependencies and devDependencies.
 
-Sorts your `package.json` file when you use the command and optionally, when you save
+## Extension Settings
 
-![Before and After gif](/home/james/dev/sort-package/assets/gif.gif)
+This extension contributes the following settings:
 
-### Config
-
-- `sortPackage.onSave`: enable/disable sorting package.json on save
+- `sortPackageDependencies.onSave`: enable/disable sorting package.json dependencies on save
 
 ## Known Issues
 
-No known issues :)
+No known issues.
 
 ## Release Notes
 
 ### 1.0.0
 
-Initial release of Sort Package
-
----
-
-**Developed with ❤️ by jamesinaxx**
+Initial release.
